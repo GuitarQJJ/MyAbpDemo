@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<!--天气预报-->
+<view class="container">
+  <li>天气状态： 济南 </li>
+  <li>天气状态：{{ result.now.text }}</li>
+  <li>云量：{{ result.now.cloud }}</li>
+  <li>风力等级：{{ result.now.windScale }}</li>
+  <li>风速：{{ result.now.windSpeed }}</li>
+  <li>温度：{{ result.now.temp }}</li>
+  <li>观测时间：{{ result.now.obsTime }}</li>
+</view>

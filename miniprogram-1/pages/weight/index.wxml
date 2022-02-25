@@ -1,0 +1,13 @@
+<!--pages/weight/index.wxml-->
+<view class="container" style="width: 750rpx; display: flex; box-sizing: border-box">
+  <li>磅单编号：{{ result.data[0].Code }}</li>
+  <li>业务类型编号：{{ result.data[0].BusType }}</li>
+  <li>业务类型名称：{{ result.data[0].BusTypeName }}</li>
+  <li>车号：{{ result.data[0].VehicleCode }}</li>
+  <li>往来单位名称：{{ result.data[0].UnitName }}</li>
+  <li>商品名称：{{ result.data[0].InvName }}</li>
+  <view wx:for="{{result.data}}" wx:for-index="idx" wx:for-item="itemName">
+  磅单编号: {{itemName.Code}}
+  </view>
+</view>
+
